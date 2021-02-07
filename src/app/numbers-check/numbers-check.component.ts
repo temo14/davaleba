@@ -9,7 +9,7 @@ export class NumbersCheckComponent implements OnInit {
 
 firstNumber:number=0;
 secondNumber:number=0;
-resultText:string="აქ გამოჩნდება რიცხვის"
+resultText:string="აქ გამოჩნდება რიცხვის";
   constructor() { }
 
   ngOnInit(): void {

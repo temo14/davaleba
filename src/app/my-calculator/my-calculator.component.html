@@ -1,1 +1,19 @@
-<p>my-calculator works!</p>
+<div classs="container">
+    <div>
+        <label>First Num:</label>
+<input type="form-control" [(ngModel)]="firstNumber" type="number"/>
+    </div>
+</div>
+<div classs="container">
+    <div>
+        <label>Second Num:</label>
+<input type="form-control"[(ngModel)]="secondNumber" type="number"/>
+    </div>
+</div>
+
+
+<div class='col-3'>
+    <button onclick="calculateNumbers()">calculate</button>
+</div>
+
+<P>{{resultText}}</P>

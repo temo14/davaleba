@@ -1,0 +1,11 @@
+<p>select-component works!</p>
+<div class="col-3">
+<select class="form-control" (change)="valueChange($event)">
+<option value="">--აირჩიეთ--</option>
+<option *ngFor="let number of selectValues" [value]="number">{{number}}</option>
+<div *ngIf="show" class="alert alert-danger" role="alert">
+  რიცხვი არის {{selectedValue}}
+   </div>
+
+</select>
+</div>

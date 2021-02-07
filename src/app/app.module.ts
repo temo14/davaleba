@@ -11,6 +11,12 @@ import { MyCompComponent } from './my-comp/my-comp.component';
 import { NumbersCheckComponent } from './numbers-check/numbers-check.component';
 import { MyCalculatorComponent } from './my-calculator/my-calculator.component';
 import { MyNumbersComponent } from './my-numbers/my-numbers.component';
+import { SecondPageComponent } from './second-page/second-page.component';
+import { PliusMinusNumbersComponent } from './plius-minus-numbers/plius-minus-numbers.component';
+import { MyNamesComponent } from './my-names/my-names.component';
+import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
+import { SelectComponentComponent } from './select-component/select-component.component';
+import { MyImageComponent } from './my-image/my-image.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,13 @@ import { MyNumbersComponent } from './my-numbers/my-numbers.component';
     MyCompComponent,
     NumbersCheckComponent,
     MyCalculatorComponent,
-    MyNumbersComponent
+    MyNumbersComponent,
+    SecondPageComponent,
+    PliusMinusNumbersComponent,
+    MyNamesComponent,
+    NewCalculatorComponent,
+    SelectComponentComponent,
+    MyImageComponent
   ],
   imports: [
     BrowserModule,

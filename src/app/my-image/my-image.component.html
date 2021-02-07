@@ -1,0 +1,10 @@
+<p>my-image works!</p>
+<div class="container">
+    <img [src]="imgSource" alt=""/>
+    <select class="form-control" (change)=changeImageSelect($event)>
+        <option *ngFor="let number of selectValues" [value]="number">{{number}}</option>
+
+    </select>
+   <input type="text" class="form-control" [(ngModel)]="newImage" />
+<button  (click)="changeImage()">შეცვლა</button>
+</div>

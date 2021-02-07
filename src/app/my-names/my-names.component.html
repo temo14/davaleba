@@ -1,0 +1,11 @@
+<div class="container">
+<p>my-names works!</p>
+<ol >
+    <li *ngFor="let item of names" >{{item}}</li>
+</ol>
+<p *ngFor="let item of names">{{item}}</p>
+
+
+<input class="form-control" [(ngModel)]="newName" type="text"/>
+<button class="btn btn-info" (click)="addName()">Add Name</button>
+</div>

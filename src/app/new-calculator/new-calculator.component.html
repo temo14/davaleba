@@ -1,0 +1,17 @@
+
+    <div *ngIf="showError" class="alert alert-danger" role="alert">
+       არ იყოფა 0 ზე !
+      </div> 
+<div class="container">
+<input type='number' class="form-control" [(ngModel)]='firstNumber'>
+<input type='number' class="form-control" [(ngModel)]='secondNumber'>
+<p>{{result}}</p>
+
+<button class="btn btn-primary" (click)="plusNum()">mimateba</button>
+<button class="btn btn-danger" (click)="gamoklebaNum()">gamokleba</button>
+<button class="btn btn-dark" (click)="gamravlebaNum()">gamravleba</button>
+<button class="btn btn-info" (click)="calculateNumbers()">gayopa</button>
+<button class="btn btn-primary" (click)="clear()">clear</button>
+
+
+</div>
