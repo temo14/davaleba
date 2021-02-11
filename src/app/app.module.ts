@@ -17,6 +17,9 @@ import { MyNamesComponent } from './my-names/my-names.component';
 import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
 import { SelectComponentComponent } from './select-component/select-component.component';
 import { MyImageComponent } from './my-image/my-image.component';
+import { MyJobsComponent } from './my-jobs/my-jobs.component';
+import { JobsCandidatesComponent } from './jobs-candidates/jobs-candidates.component';
+import { JobsVacanciesComponent } from './jobs-vacancies/jobs-vacancies.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { MyImageComponent } from './my-image/my-image.component';
     MyNamesComponent,
     NewCalculatorComponent,
     SelectComponentComponent,
-    MyImageComponent
+    MyImageComponent,
+    MyJobsComponent,
+    JobsCandidatesComponent,
+    JobsVacanciesComponent
   ],
   imports: [
     BrowserModule,
