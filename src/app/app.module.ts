@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { MyImageComponent } from './my-image/my-image.component';
 import { MyJobsComponent } from './my-jobs/my-jobs.component';
 import { JobsCandidatesComponent } from './jobs-candidates/jobs-candidates.component';
 import { JobsVacanciesComponent } from './jobs-vacancies/jobs-vacancies.component';
+import { BankClientsComponent } from './bank-clients/bank-clients.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +41,14 @@ import { JobsVacanciesComponent } from './jobs-vacancies/jobs-vacancies.componen
     MyImageComponent,
     MyJobsComponent,
     JobsCandidatesComponent,
-    JobsVacanciesComponent
+    JobsVacanciesComponent,
+    BankClientsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

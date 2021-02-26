@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="alert alert-danger" role="alert" *ngIf="showError">
+      <strong>მოხდა შეცდომა</strong>{{errorText}}
+    </div>
+</div>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>LastName</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Deposit</th>
+            <th></th>
+            <th></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let client of ClientsArr">
+            <td>{{client.id}}</td>
+            <td>{{client.name}}</td>
+            <td>{{client.LastName}}</td>
+            <td>{{client.Age}}</td>
+            <td>{{client.Gender}}</td>
+            <td>{{client.Deposit}}</td>
+            <td><button class="btn btn-danger" >X</button></td>
+            <td><button class="btn btn-warning" >!</button></td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+<div class="col-4">
+    <form [formGroup]="clientForm" (ngSubmit)="saveClient()">
+    
+        <label for="id">Id:</label>
+    <input formControlName="idControl"  class="form-control" [attr.disabled] = "true" type="number">
+
+    <label for="name">Name:</label>
+    <input formControlName="nameControl" name="name"  class="form-control" type="text">
+
+    <label for="name">LastName:</label>
+    <input formControlName="LastNameControl" name="name"  class="form-control" type="text">
+    
+    <label for="name">Age:</label>
+    <input formControlName="AgeControl" name="name"  class="form-control" type="text">
+ 
+    <label for="year">Gender: </label>
+        <select class="form-control" formControlName="GenderControl">        
+            <option value="" > --აირჩიე--</option>
+            <option  *ngFor="let gender of genders" [value]="gender" > {{gender}}</option>    
+        </select>
+
+    <label for="name">Deposit:</label>
+    <input formControlName="depositControl" name="name" class="form-control" type="text">
+    <button class="btn btn-primary" type="submit">save</button>
+</form>
+</div>
+</div>
